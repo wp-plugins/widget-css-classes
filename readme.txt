@@ -10,7 +10,7 @@ Requires at least: 3.3
 Tested up to: 3.4.1
 Stable tag: 1.0
 
-Add custom classes and ids plus first, last, even, odd, and numbered classes to your widgets.
+Add custom widget classes and ids plus first, last, even, odd, and numbered classes to your widgets.
 
 == Description ==
 
