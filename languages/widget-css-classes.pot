@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Widget CSS Classes\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-16 18:53-0500\n"
-"PO-Revision-Date: 2012-07-16 18:53-0500\n"
+"POT-Creation-Date: 2012-10-10 12:53-0500\n"
+"PO-Revision-Date: 2012-10-10 12:53-0500\n"
 "Last-Translator: C.M. Kendrick <cindy@cleverness.org>\n"
 "Language-Team:  <cindy@cleverness.org>\n"
 "MIME-Version: 1.0\n"
@@ -63,35 +63,39 @@ msgstr ""
 msgid "Dropdown"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:91
+#: ../includes/widget-css-classes-settings.class.php:60
+msgid "Hide"
+msgstr ""
+
+#: ../includes/widget-css-classes-settings.class.php:92
 msgid "Import/Export"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:96
+#: ../includes/widget-css-classes-settings.class.php:97
 msgid "Settings Imported"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:99
+#: ../includes/widget-css-classes-settings.class.php:100
 msgid "Invalid Settings File"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:102
+#: ../includes/widget-css-classes-settings.class.php:103
 msgid "No Settings File Selected"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:173
+#: ../includes/widget-css-classes-settings.class.php:174
 msgid "Widget CSS Classes"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:219
+#: ../includes/widget-css-classes-settings.class.php:220
 msgid "Import/Export Settings"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:221
+#: ../includes/widget-css-classes-settings.class.php:222
 msgid "Export Settings"
 msgstr ""
 
-#: ../includes/widget-css-classes-settings.class.php:225
+#: ../includes/widget-css-classes-settings.class.php:226
 msgid "Import Settings"
 msgstr ""
 
@@ -108,23 +112,23 @@ msgstr ""
 msgid "Select"
 msgstr ""
 
-#: ../includes/widget-css-classes.class.php:127
+#: ../includes/widget-css-classes.class.php:143
 msgid "widget-"
 msgstr ""
 
-#: ../includes/widget-css-classes.class.php:128
+#: ../includes/widget-css-classes.class.php:144
 msgid "widget-first"
 msgstr ""
 
-#: ../includes/widget-css-classes.class.php:129
+#: ../includes/widget-css-classes.class.php:145
 msgid "widget-last"
 msgstr ""
 
-#: ../includes/widget-css-classes.class.php:130
+#: ../includes/widget-css-classes.class.php:146
 msgid "widget-even"
 msgstr ""
 
-#: ../includes/widget-css-classes.class.php:131
+#: ../includes/widget-css-classes.class.php:147
 msgid "widget-odd"
 msgstr ""
 
