@@ -84,6 +84,9 @@ class WCSSC_Lib {
 				'show_id'       => 0,
 				'type'          => 1,
 				'dropdown'      => '',
+				'show_number'   => 1,
+				'show_location' => 1,
+				'show_evenodd'  => 1,
 			);
 
 			add_option( 'WCSSC_options', $options );
@@ -91,12 +94,13 @@ class WCSSC_Lib {
 
 		} else {
 
-			/*if ( $version < 1.1 ) {
-				$general_options         = get_option( 'WCSSC_general' );
-				$general_options['field'] = 0;
-				update_option( 'WCSSC_general', $general_options );
-			}*/
-
+			if ( $version < 1.2 ) {
+				$general_options         = get_option( 'WCSSC_options' );
+				$general_options['show_number'] = 1;
+				$general_options['show_location'] = 1;
+				$general_options['show_evenodd'] = 1;
+				update_option( 'WCSSC_options', $general_options );
+			}
 		}
 	}
 
