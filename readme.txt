@@ -7,16 +7,19 @@ Tags: widgets, classes, css, widget classes, widget css
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Requires at least: 3.3
-Tested up to: 3.7
-Stable tag: 1.2.2
+Tested up to: 3.7.1
+Stable tag: 1.2.3
 
 Add custom classes and ids plus first, last, even, odd, and numbered classes to your widgets.
 
 == Description ==
 
-Widget CSS Classes gives you the ability to add custom classes and ids to your WordPress widgets.
+### Widget CSS Classes gives you the ability to add custom classes and ids to your WordPress widgets ###
 
-This plugin also adds additional classes to help you style your widgets easier:
+_Please note that this plugin doesn't enable you to enter custom CSS. You'll need to edit your theme's style.css or add another
+ plugin that allows you to input custom CSS._
+
+__This plugin also adds additional classes to widgets to help you style them easier:__
 
 * widget-first: added to the first widget in a sidebar
 * widget-last: added to the last widget in a sidebar
@@ -24,11 +27,11 @@ This plugin also adds additional classes to help you style your widgets easier:
 * widget-even: added to even numbered widgets in a sidebar
 * widget-#: added to every widget, such as widget-1, widget-2
 
-Features:
+__Features:__
 
 * Adds a text field to a widget for defining a class
 * You can specify multiple classes by putting a space between them
-* Optionally adds a dropdown menu with predefined classes instead of a text field
+* Optionally adds a drop-down menu with predefined classes instead of a text field
 * Optionally adds a text field to add an id to a widget
 * Adds first and last classes to the first and last widget instances in a sidebar
 * Adds even/odd classes to widgets
@@ -42,19 +45,22 @@ Features:
 
 == Installation ==
 
-1. Upload the folder '/widget-css-classes/' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure the settings under Settings > Widget CSS Classes
-4. Visit Appearance > Widgets to add or change the custom classes and ids for a widget.
+1. Upload the folder _/widget-css-classes/_ to the _/wp-content/plugins/_ directory
+2. Activate the plugin through the __Plugins__ menu in WordPress
+3. Configure the settings under __Settings > Widget CSS Classes__
+4. Visit __Appearance > Widgets__ to add or change the custom classes and ids for a widget.
 5. Expand the appropriate widget in the desired sidebar.
-6. You'll see a field labeled CSS Class. Depending on your settings, this will be a text field or a dropdown field.
+6. You'll see a field labeled __CSS Class__. Depending on your settings, this will be a text field or a drop-down field.
 7. If you are using the text field you can enter multiple class names by separating them with a space.
-8. If you've enabled the id field, you will see a text field called CSS ID and can also enter multiple ids by separating them with a space.
+8. If you've enabled the id field, you will see a text field called __CSS ID__.
 
 == Frequently Asked Questions ==
 
 = Why aren't the classes showing up in my widget? =
-You must make sure you have an HTML element defined for `before_widget` and `after_widget` in your `register_sidebar` functions. This HTML element must have class and id attributes. This plugin will not work if `before_widget` and `after_widget` are blank.
+You need to make sure you have an HTML element defined for `before_widget` and `after_widget` in your active theme's `register_sidebar` functions,
+usually located in your theme's functions.php (_/wp-content/themes/yourtheme/functions.php_).
+
+This HTML element must have class and id attributes. This plugin will not work if `before_widget` and `after_widget` are blank.
 
 Example:
 `register_sidebar( array(
@@ -65,8 +71,15 @@ Example:
 	'after_title'   => '</h2>'
 ) );`
 
+= How do I add the CSS for my custom class? =
+There are two ways:
+
+1. Edit your theme's style.css file (usually located in _/wp-content/themes/yourtheme/_).
+
+2. Use a plugin such as [Simple Custom CSS](http://wordpress.org/plugins/simple-custom-css/).
+
 = How I export the Settings? =
-You can export the Settings from Settings > Widget CSS Classes > Import/Export.
+You can export the Settings from __Settings > Widget CSS Classes > Import/Export__.
 
 = What should I do if I find a bug? =
 
@@ -80,6 +93,10 @@ Visit [the plugin website](http://cleverness.org/plugins/widget-css-classes/) an
 4. Generated HTML
 
 == Changelog ==
+
+= 1.2.3 =
+* Added Polish translation, Slovak translation files renamed by [Tomasz Wesołowski](https://github.com/ittw)
+* Added Spanish translation by [Maria Ramos at WebHostingHub](http://www.webhostinghub.com/)
 
 = 1.2.2 =
 * Fix for notice on line 103 when using Widget Logic
@@ -106,6 +123,9 @@ Visit [the plugin website](http://cleverness.org/plugins/widget-css-classes/) an
 
 == Upgrade Notice ==
 
+= 1.2.3 =
+New translations
+
 = 1.2.2 =
 Bug fix
 
@@ -129,6 +149,10 @@ Plus/Minus Icons from [Farm Fresh Icons](http://www.fatcow.com/free-icons) by Fa
 Widget Context compatibility fix provided by [Joan Piedra](http://joanpiedra.com/)
 
 Slovak translation by Branco [WebHostingGeeks.com](http://webhostinggeeks.com/user-reviews/)
+
+Polish translation added, Slovak translation files renamed by [Tomasz Wesołowski](https://github.com/ittw)
+
+Spanish translation by [Maria Ramos at WebHostingHub](http://www.webhostinghub.com/)
 
 == License ==
 
