@@ -120,7 +120,7 @@ class WCSSC {
 		else {
 			// Check if WP Page Widget is in use
 			$custom_sidebarcheck = get_post_meta( get_the_ID(), '_customize_sidebars' );
-			if ($custom_sidebarcheck[0]=='yes'){
+			if ( isset( $custom_sidebarcheck[0] ) && ( $custom_sidebarcheck[0] == 'yes' ) ) {
 				$widget_opt = get_option( 'widget_'.get_the_id().'_'.substr($widget_obj['callback'][0]->option_name, 7) );
 			}
 			else {
